@@ -7,4 +7,15 @@
 2. Always try to make Component with First word capital letter. 
 	like: Card.jsx
 
-3. 
+3. jsx ==> javascript fixed with HTML, bundler help to translate it 	  into browser html, css, js.
+
+4. {} ==> evaluated expression , like in js `${}`
+
+5. default react element predefined structure, done by BABEL
+
+	React.createElement(
+		'a',
+		{href:.....}, //props
+		'click me' // showed item
+	)
+		above is the predefined structure
