@@ -19,3 +19,9 @@
 		'click me' // showed item
 	)
 		above is the predefined structure
+
+6. hooks used for when i have to update multiplte value the value in       	UI, means UI update will control by React (hook) ===> solved 
+	phantom problem. 
+
+7. let [ var, Function name ] = useState(default value);
+	to match the state value and UI represented value
