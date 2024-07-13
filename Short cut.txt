@@ -3,3 +3,8 @@
 
 	ii. npm create vite@latest   (using vite rollup)
 	    npm i (to install the node module)
+
+2. Always try to make Component with First word capital letter. 
+	like: Card.jsx
+
+3. 
