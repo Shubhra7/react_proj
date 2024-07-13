@@ -1,0 +1,5 @@
+1. Create / Install react
+	i. npx create-react-app filename
+
+	ii. npm create vite@latest   (using vite rollup)
+	    npm i (to install the node module)
