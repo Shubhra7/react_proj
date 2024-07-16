@@ -26,7 +26,8 @@
 7. let [ var, Function name ] = useState(default value);
 	to match the state value and UI represented value
 
-8. tailwind css
+8. tailwind css  ( to add do all in recommend in the site like- install, add in tailwind.css, add in index.css of decorator)
+
 9. devUI io
 
 10. react snippet extension
