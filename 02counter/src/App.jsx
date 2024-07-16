@@ -32,6 +32,7 @@ function App() {
 
   return (
     <>
+    
      <h1>Counter making</h1>
      <p>Within 0 to 10</p>
      <h2>Counter value: {counter}</h2>
