@@ -32,3 +32,10 @@
 
 10. react snippet extension
 	rfce = react functional components
+
+11. Router: npm i react-router-dom
+	 import {createBrowserRouter} from 'react-router-dom';
+	import {createBrowserRouter, RouterProvider} from 'react-	router-dom';
+
+	*****DO IT IN MAIN.JSX****
+
