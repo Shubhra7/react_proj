@@ -8,8 +8,28 @@ function App() {
   let [password, setPassword] = useState("kalu");
   let [length, setLength] = useState(8)
   let [numberAllowed, setNumberAllowed] = useState(false)
+  let [charAllowed, setCharAllowed] = useState(false);
+
+  const passwordGenrator = useCallback(()=>{
+    let pass = ""
+    let str= "ABCDEFGHIJKLMNOPabcdefghijklmnop";
+    if(numberAllowed) str+="0123456789"
+    if(charAllowed) str+="!@#$%^&*()_{}[]~`"
+
+    for( let i=1; i<=length; i++){
+      let char = Math.floor(Math.random() * str.length +1)
+      pass += str.charAt(char)
+    }
+    setPassword(pass)
+
+  },[length,numberAllowed,charAllowed,setPassword])
+
+  useEffect(()=>{
+    passwordGenrator()
+  },[length,numberAllowed,charAllowed,passwordGenrator])
 
   const copyPassword =useCallback(()=>{
+    passwordRef.current?.select()
     window.navigator.clipboard.writeText(password)
   },[password])
 
@@ -64,6 +84,18 @@ function App() {
               }}
             />
             <label htmlFor='numberInput'>Numbers</label>
+          </div>
+          <div className="flex items-center gap-x-1">
+            <input
+              type='checkbox'
+              defaultChecked={charAllowed}
+              id="characterInput"
+              onChange={()=>{
+                setCharAllowed((prev) => !prev);
+              }}
+            />
+            <label htmlFor='characterInput'>
+            Characters</label>
           </div>
         </div>
        </div>
