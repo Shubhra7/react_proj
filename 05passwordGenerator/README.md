@@ -1,4 +1,4 @@
-## ALL hook is same project
+## ALL hooks is same project
 
 - useCallback()
 - useEffect()
