@@ -1,0 +1,8 @@
+#cal{
+    border: 1px solid black;
+    width: 40%;
+    margin: auto;
+    display: block;
+    border-radius: 10px;
+    text-align: center;
+}
