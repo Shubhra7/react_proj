@@ -11,8 +11,8 @@ function App() {
   const [convertedAmount, setConvertedAmount] = useState(0);
 
   const currecyInfo = useCurrencyInfo(from )
-  console.log(currecyInfo);
-  console.log("hello in appjs");
+//   console.log(currecyInfo);
+//   console.log("hello in appjs");
 
   const options = Object.keys(currecyInfo)   // custom hook useCurrencyInfo return the data
   //  which is object so to get the keys of the object we did Object.keys()
