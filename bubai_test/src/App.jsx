@@ -1,33 +1,44 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import InputBox from './components/InputBox'
+import { useState,useCallback } from 'react'
 
 function App() {
-  const [count, setCount] = useState(0)
+  let [value1, setValue1] = useState(0);
+  let [value2, setValue2] = useState(0);
+
+  const kalu = () =>{
+        setValue1(value2)
+        setValue2(value1)
+  }
+
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+    <div className='deb'>
+      <h1>Check</h1>
+      <form id="frm" onSubmit={
+        (e)=>{e.preventDefault()}
+        }>
+      <InputBox
+      name="First"
+      value={value1}
+      setValue={(current)=>setValue1(current)}
+       />
+      
+      <InputBox
+      name="Second"
+      value={value2}
+      setValue={(current)=>setValue2(current)}
+       />
+      
+      <button
+      type='submit'
+      onClick={kalu}
+      >Swap</button>
+
+      </form>
+    </div>
+
     </>
   )
 }
