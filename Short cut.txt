@@ -57,3 +57,51 @@ createRoot(document.getElementById('root')).render(
   </StrictMode>,
 )
 
+
+13. Shadcn ==> new UI developing tool   (https://ui.shadcn.com/docs/dark-mode/vite)
+	tailwind's daddy ==> Shandcn
+
+14. TanStack
+
+	==> without using useEffect, useState hooks for API fetcher when we more need
+	use this 
+
+	TanStack Query is a data-fetching and state management library for React (and now other 	frameworks too) that makes handling server state in your app a breeze.
+
+
+15. <ReactQueryDevtools /> = a built-in, powerful DevTools panel for TanStack Query.
+Lets you monitor, inspect, and debug all your queries in real-time right in your app.
+📊 How it looks:
+A small button appears at the bottom-left or bottom-right corner of your app.
+Clicking it shows a panel listing all your queries, their cache, status, and data.
+
+
+16. Geolocation: 
+What is navigator.geolocation?
+It’s a built-in browser API provided by the navigator object that lets you access the user’s geographical location (with their permission).
+
+<button onclick="show()">Get Location</button>
+<p id="result"></p>
+
+<script>
+function show() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(
+      function(position) {
+        document.getElementById("result").innerHTML =
+          "Latitude: " + position.coords.latitude + "<br>" +
+          "Longitude: " + position.coords.longitude;
+      },
+      function(error) {
+        document.getElementById("result").innerHTML =
+          "Error: " + error.message;
+      }
+    );
+  } else {
+    document.getElementById("result").innerHTML = "Geolocation not supported.";
+  }
+}
+</script>
+
+
+
