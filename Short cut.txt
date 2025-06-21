@@ -104,4 +104,9 @@ function show() {
 </script>
 
 
+17. For creating charts: Rechart library :  https://recharts.org/en-US/guide/installation
+
+npm install recharts data-fns
+
+
 
