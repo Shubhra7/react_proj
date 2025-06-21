@@ -48,7 +48,7 @@ function App() {
   const copyPasswordToClipboard = useCallback(()=>{
     passwordRef.current?.select();  // for UI effect during copy 
     passwordRef.current?.setSelectionRange(0,999);
-    window.navigator.clipboard.writeText(password);
+    window.navigator.clipboard.writeText(password);  // for copying password in your clipboard of keyboard
   },[password])
 
   return (
