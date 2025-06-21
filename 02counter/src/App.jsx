@@ -16,7 +16,7 @@ function App() {
       setCounter(counter);    //setCounter to update the value in UI also
       // console.log("clicked",Math.random());
     } else{
-      alert("Goes more than 20");
+      alert("Goes more than 10");
     }
  
   }

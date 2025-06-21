@@ -16,6 +16,7 @@ function App() {
       Tailwind Test</h1>
         <Card username="Bubai" obj={myObj} arr={myArr} btnText="Click me" />
         <Card username="Shubhra" btnText="vist me" />
+        <Card username="Debjit"/>
 
     </>
   )

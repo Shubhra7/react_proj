@@ -11,7 +11,7 @@ function Tb() {
             </thead>
             <tbody>
                 <tr>
-                    <td style={cellStyle}>Hello</td>
+                    <td style={cellStyle}>Helloo</td>
                     <td style={cellStyle}>Bye123</td>
                 </tr>
                 <tr>
