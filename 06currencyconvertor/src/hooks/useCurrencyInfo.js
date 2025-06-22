@@ -6,7 +6,7 @@ function useCurrencyInfo(currency){
     useEffect(()=>{
         fetch(url)
         .then((res) => res.json())
-        .then((data) => setData(data[currency]))
+        .then((data) => setData(data[currency])) // important to take data[currency] **
         console.log(data);
     }, [currency])
     console.log("From inside useCUrrency");
