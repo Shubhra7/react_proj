@@ -80,6 +80,8 @@ Clicking it shows a panel listing all your queries, their cache, status, and dat
 What is navigator.geolocation?
 It’s a built-in browser API provided by the navigator object that lets you access the user’s geographical location (with their permission).
 
+17. <Link> ==> Don't render the whole page like <a> tag
+
 <button onclick="show()">Get Location</button>
 <p id="result"></p>
 

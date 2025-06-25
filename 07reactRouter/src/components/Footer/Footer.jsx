@@ -20,14 +20,28 @@ export default function Footer() {
                             <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">Resources</h2>
                             <ul className="text-gray-500 font-medium">
                                 <li className="mb-4">
-                                    <Link to="/" className="hover:underline">
+                                    <NavLink to="/" className={({isActive}) =>
+                                        `block py-2 pr-4 pl-3 
+                                        ${isActive ? "text-orange-700" : "text-gray-700"}
+                                        duration-200 border-b 
+                                        border-gray-100 hover:bg-gray-50 
+                                        lg:hover:bg-transparent lg:border-0
+                                         hover:text-orange-700 lg:p-0`
+                                    }>
                                         Home
-                                    </Link>
+                                    </NavLink>
                                 </li>
                                 <li>
-                                    <Link to="/about" className="hover:underline">
+                                    <NavLink to="/about" className={({isActive}) =>
+                                        `block py-2 pr-4 pl-3 
+                                        ${isActive ? "text-orange-700" : "text-gray-700"}
+                                        duration-200 border-b 
+                                        border-gray-100 hover:bg-gray-50 
+                                        lg:hover:bg-transparent lg:border-0
+                                         hover:text-orange-700 lg:p-0`
+                                    }>
                                         About
-                                    </Link>
+                                    </NavLink>
                                 </li>
                             </ul>
                         </div>
@@ -73,7 +87,7 @@ export default function Footer() {
                     <span className="text-sm text-gray-500 sm:text-center">
                         © 2023
                         <a href="https://hiteshchoudhary.com/" className="hover:underline">
-                            hiteshchoudhary
+                            ShubhrajitGhosh
                         </a>
                         . All Rights Reserved.
                     </span>
