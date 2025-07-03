@@ -111,4 +111,11 @@ function show() {
 npm install recharts data-fns
 
 
+18. Cotext API for reducing the unnecessary props. Act like global variable.
+	But context API only available in React, so for rest we have "Redux".
+	Redux ===> help in overall state management very much.
+
+19. Redux-toolkit (RTK) ==> easier version of React-Redux
+
+
 
