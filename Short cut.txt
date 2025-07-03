@@ -195,6 +195,11 @@ export default function useTheme(){
 }
 
 
+24. for darkmode in tailwind
+	add in index.css
+	==> @custom-variant dark (&:where(.dark, .dark *));
+
+
 
 
 
