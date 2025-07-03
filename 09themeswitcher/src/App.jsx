@@ -18,6 +18,8 @@ function App() {
 
   // actual change in theme
   useEffect(()=>{
+    // Because tailwind change 'html' class for change theme
+    // this is usefull because we have used the tailwind 
     document.querySelector('html').classList.remove("light","dark")
     document.querySelector('html').classList.add(themeMode)
   },[themeMode])
