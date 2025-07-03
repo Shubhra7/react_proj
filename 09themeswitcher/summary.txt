@@ -1,0 +1,16 @@
+1. created Theme context in new mode
+2. all create, provide, useContext done in same file==? "theme.js"
+
+#### Implementation
+3. in app.js we are doing the lightTheme and darkTheme implementation
+4. in app.js we see if context primaryily not defined then how implemnet 
+5. in app.js use useEffect for changing the whole theme by context-themeMode
+
+####### applying 
+6. made ThemeBtn and Card 
+7. in ThemeBtn using checked and onChange 
+8. we set the theme mode for 
+
+##### adding
+9. add @custom-variant dark (&:where(.dark, .dark *)); in index.css
+10. done 
