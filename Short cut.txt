@@ -125,7 +125,7 @@ npm install recharts data-fns
 			export default UserContext;
 
 
-	. make UserContextProvider.jsx file (for creating the provider like fragment to give context)
+	===>. make UserContextProvider.jsx file (for creating the provider like fragment to give context)
 
 import React from "react";
 import UserContext from "./UserContext";
@@ -145,6 +145,19 @@ export default UserContextProvider
 
 
 ****** the provider can be directed given into the App.jsx *******
+
+21. for send data in context
+	in login page
+
+const {setUser} = useContext(UserContext);
+
+    const handleSubmit=(e)=>{
+        e.preventDefault()
+        setUser({username,password})
+        
+    }
+
+
 
 
 
