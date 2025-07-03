@@ -117,5 +117,34 @@ npm install recharts data-fns
 
 19. Redux-toolkit (RTK) ==> easier version of React-Redux
 
+20. For context API, we first do the 
+	. Make UserContext.js file (for creating the context)
+
+			import React from "react";
+			const UserContext = React.createContext()
+			export default UserContext;
+
+
+	. make UserContextProvider.jsx file (for creating the provider like fragment to give context)
+
+import React from "react";
+import UserContext from "./UserContext";
+
+//  children is like the inner div or content when used to enclose the code
+const UserContextProvider = ({children}) =>{
+    const [user, setUser] = React.useState(null)
+    return (
+        <UserContext.Provider value={{user,setUser}}>
+            {children}  // like "oulet"
+        </UserContext.Provider>
+    )
+
+}
+
+export default UserContextProvider
+
+
+****** the provider can be directed given into the App.jsx *******
+
 
 
