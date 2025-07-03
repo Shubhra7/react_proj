@@ -199,6 +199,8 @@ export default function useTheme(){
 	add in index.css
 	==> @custom-variant dark (&:where(.dark, .dark *));
 
+25. const hasNull = [firstname, lastname, address].some(item => item == null); trick
+
 
 
 
