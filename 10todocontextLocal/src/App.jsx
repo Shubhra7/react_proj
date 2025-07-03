@@ -6,6 +6,7 @@ import TodoItem from './components/TodoItem'
 
 
 function App() {
+  // this the context api todos
   const [todos, setTodos] = useState([])
 
   // now implement the context api given methods
