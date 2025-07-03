@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import './App.css'
 import { TodoProvider } from './contexts'
 
@@ -31,11 +31,31 @@ function App() {
     setTodos((prev) => prev.filter((todo) => todo.id !== id))
   }
 
+
   // for toggle rest will be same and the matched id todo will changed
   //total todos(array of objects)--> single object--> check id--> change or same
   const toggleComplete = (id)=>{
     setTodos((prev)=> prev.map((prevTodo)=> prevTodo === id ? {...prevTodo, completed: !prevTodo.completed} : prevTodo))
   }
+
+  // use local storage beacuse when first or anytime refresh the todos should be in the localstorage 
+  // useEffect for first time fetched and dependency changes fetched
+  // local storage alawys store value in String format but we need in JSON format that's why JSON.parse used
+  // localstorage stored vlaue in key-value format
+  useEffect(()=>{
+    const todos = JSON.parse(localStorage.getItem("todos")) // fetched by key "todos"
+    
+    if (todos && todos.length > 0) {
+      setTodos(todos)
+    }
+  },[])
+
+  // useEffect for when we add new todos it will add it in localstorage also
+  // localStorage storges in String format so we used JSON.stringify
+  useEffect(()=>{
+    localStorage.setItem("todos", JSON.stringify(todos))
+  },[todos])
+
 
   return (
     <TodoProvider value={{todos, addTodo, updatedTodo, deleteTodo, toggleComplete}}>

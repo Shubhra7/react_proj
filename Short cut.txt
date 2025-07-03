@@ -200,6 +200,10 @@ export default function useTheme(){
 	==> @custom-variant dark (&:where(.dark, .dark *));
 
 25. const hasNull = [firstname, lastname, address].some(item => item == null); trick
+26. localStorage stored value in => key: value format
+	localStorage always stored value is String format so use JSON.stringify()
+	and for getting use JSON.parse() [for convert into JSON format]
+	
 
 
 
