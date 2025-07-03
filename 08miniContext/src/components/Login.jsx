@@ -9,7 +9,7 @@ const Login = () => {
 
     const handleSubmit=(e)=>{
         e.preventDefault()
-        setUser({username,password})
+        setUser({username,password})  // in user state we are storing object stored=>(username,password)
         
     }
 
