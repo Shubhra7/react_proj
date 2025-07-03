@@ -153,9 +153,24 @@ const {setUser} = useContext(UserContext);
 
     const handleSubmit=(e)=>{
         e.preventDefault()
-        setUser({username,password})
+        setUser({username,password})    // in user state we are storing object stored=>(username,password)		
         
     }
+
+22. for profile page
+
+import React, { useContext } from "react"
+import UserContext from "../context/UserContext"
+
+const Profile = () => {
+    const {user} = useContext(UserContext)
+  
+    if(!user) return <div>Please Login</div>
+
+    return <div>welcome {user.username}</div>
+}
+export default Profile
+
 
 
 
