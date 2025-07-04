@@ -111,6 +111,10 @@ function show() {
 npm install recharts data-fns
 
 
+
+    ******########## MAIN PROBLEM WAS TO PASS PROPS FROM PARENT TO VERY LOWER LEVEL CHILD #####*****
+
+
 18. Cotext API for reducing the unnecessary props. Act like global variable.
 	But context API only available in React, so for rest we have "Redux".
 	Redux ===> help in overall state management very much.
@@ -203,6 +207,9 @@ export default function useTheme(){
 26. localStorage stored value in => key: value format
 	localStorage always stored value is String format so use JSON.stringify()
 	and for getting use JSON.parse() [for convert into JSON format]
+27. Context Api is like --> Global storage for variable --> use useContext hook and use it
+
+27. Redux is a library --> For using with react we use= React-library 
 	
 
 
