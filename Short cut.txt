@@ -214,6 +214,10 @@ export default function useTheme(){
 28. Redux is a library --> For using with react we use= React-library 
 29. Setting up:
 	https://redux.js.org/introduction/getting-started
+30. Slice is the big version of Reducer in Redux in Redux-toolkit
+31. In Context api we can do the definition later but in redux we have to do it in the time of declaration 
+
+32. useDispatch() uses ==> a reducer to change in ==> Store
 
 	
 
