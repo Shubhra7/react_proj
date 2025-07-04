@@ -218,6 +218,7 @@ export default function useTheme(){
 31. In Context api we can do the definition later but in redux we have to do it in the time of declaration 
 
 32. useDispatch() uses ==> a reducer to change in ==> Store
+33. useSelector() uses ==> for select the data from store=> From store but keep from state
 
 	
 
