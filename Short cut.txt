@@ -209,7 +209,12 @@ export default function useTheme(){
 	and for getting use JSON.parse() [for convert into JSON format]
 27. Context Api is like --> Global storage for variable --> use useContext hook and use it
 
-27. Redux is a library --> For using with react we use= React-library 
+
+
+28. Redux is a library --> For using with react we use= React-library 
+29. Setting up:
+	https://redux.js.org/introduction/getting-started
+
 	
 
 
