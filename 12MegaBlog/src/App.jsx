@@ -17,7 +17,7 @@ function App() {
             if(userData){
               dispatch(login({userData}))
             } else {
-              dispatch(logout())
+              dispatch(logout())  // logout from state don't call appwrite logout service
             }
           })
           .finally(()=> setLoading(false))
