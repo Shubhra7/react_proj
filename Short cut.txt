@@ -247,6 +247,14 @@ export default function useTheme(){
 5. https://react-hook-form.com/get-started
  npm install react-hook-form
 
+6. https://vite.dev/guide/env-and-mode
+	VITE_SOME_KEY=123
+	DB_PASSWORD=foobar
+
+	console.log(import.meta.env.VITE_SOME_KEY) // "123"
+	console.log(import.meta.env.DB_PASSWORD) // undefined
+
+
 
 	
 
