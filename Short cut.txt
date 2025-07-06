@@ -253,8 +253,10 @@ export default function useTheme(){
 
 	console.log(import.meta.env.VITE_SOME_KEY) // "123"
 	console.log(import.meta.env.DB_PASSWORD) // undefined
+7. *** Must add permission in collection user access
 
-
+8. create appwrite--> auth.js
+	[ For creating authentication like register, login, logout etc]
 
 	
 
