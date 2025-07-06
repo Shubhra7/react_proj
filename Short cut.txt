@@ -229,6 +229,24 @@ export default function useTheme(){
 
 
 
+####################||  REACT MEGA PROJECT ||###########################
+
+
+	# Installation all:
+1. https://www.npmjs.com/package/@reduxjs/toolkit
+	npm install @reduxjs/toolkit
+	npm install react-redux
+2. npm i react-router-dom 	appwrite
+
+3. https://www.npmjs.com/package/@tinymce/tinymce-react [Visual Code Editor]
+	npm i @tinymce/tinymce-react
+
+4. https://www.npmjs.com/package/html-react-parser [HTML tag to normal, because Appwrite give like that]
+		npm install html-react-parser
+	
+5. https://react-hook-form.com/get-started
+ npm install react-hook-form
+
 
 	
 
