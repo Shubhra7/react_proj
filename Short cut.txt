@@ -225,6 +225,10 @@ export default function useTheme(){
 
 33. useSelector() uses ==> for select the data from store=> From store but keep from state
 
+34. create a store=> create feature (slice)[unlike context api, reducer definition should be done here ] ==> give the reducer list to store => then take provide and wrap in main/App and give value of Store
+
+
+
 
 	
 
