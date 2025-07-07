@@ -375,6 +375,21 @@ export default Todos
 	2. then pass it to reducer's actions for state management in redux store
 
 
+11. When to use forwardRef?
+
+When you need to pass a ref from a parent component to a child functional component’s DOM node.
+
+Common in cases like:
+
+	Custom Input components
+
+	Modals/Portals
+
+	Animations
+
+	Third-party integrations that need DOM access
+
+
 	
 
 
