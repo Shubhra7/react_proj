@@ -398,6 +398,17 @@ exp--> megaBlog project==> Select.jsx and Input.jsx
 13. RegexP
 	https://regexr.com/3a4dg
 
+14. http://localhost:3000/profile
+	then
+*******	Relative Path
+
+	<Link to="profile" />
+	navigate("profile")		==> http://localhost:3000/dashboard/profile
+
+*******	Absolute Path
+	<Link to="/profile" />
+	navigate("/profile")            ==> http://localhost:3000/profile
+
 
 	
 
