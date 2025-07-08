@@ -391,6 +391,13 @@ Common in cases like:
 exp--> megaBlog project==> Select.jsx and Input.jsx
 
 
+12. react-hook-form
+	https://youtu.be/lfMyCuB6xfc?list=PLu71SKxNbfoDqgPchmvIsL4hTnJIrtige&t=1669
+	Login.jsx (in 12MegaBlog)
+	
+13. RegexP
+	https://regexr.com/3a4dg
+
 
 	
 
