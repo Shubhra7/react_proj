@@ -419,6 +419,18 @@ exp--> megaBlog project==> Select.jsx and Input.jsx
 	navigate("/profile")            ==> http://localhost:3000/profile
 
 
+
+
+15. ************** RTE (Real Time Editor) ***********
+	Go RTE.jsx
+	tinymce
+
+import { Controller } from "react-hook-form"
+
+// then Controller helps to get reference from react-hook-form when we use this RTE in that form
+
+
+
 	
 
 
