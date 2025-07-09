@@ -55,6 +55,7 @@ const Login = () => {
                 {error}
             </p>}
             {/* as we used rect-hook-form so by default they give handleSubmit see in top lines and then pass out login method inside that handleSubmit method */}
+            {/* React hook form help in submitting values automatically without manually pick up by this technqiue */}
             <form onSubmit={handleSubmit(login)} className="mt-8">
                 <div className="space-y-5">
                     <Input
