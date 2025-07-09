@@ -355,7 +355,7 @@ export default Todos
 4. https://www.npmjs.com/package/html-react-parser [HTML tag to normal, because Appwrite give like that]
 		npm install html-react-parser
 	
-5. https://react-hook-form.com/get-started
+5. https://react-hook-form.com/get-started  [ onektai better] [easy handle data by register and handleSubmit ] ### **** ###
  npm install react-hook-form
 
 6. https://vite.dev/guide/env-and-mode
@@ -388,7 +388,16 @@ Common in cases like:
 	Animations
 
 	Third-party integrations that need DOM access
+
+Login.jsx (useForm.register)
+    ↓ (props + ref)
+Input.jsx (React.forwardRef)
+    ↓ (ref applied to)
+<input ref={ref} />
+
 exp--> megaBlog project==> Select.jsx and Input.jsx
+
+
 
 
 12. react-hook-form
