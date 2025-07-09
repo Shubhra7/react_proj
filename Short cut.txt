@@ -431,6 +431,48 @@ import { Controller } from "react-hook-form"
 
 
 
+
+16. 
+
+📌 What is React.memo?
+👉 React.memo is a higher-order component (HOC) that memoizes a React functional component.
+It prevents the component from re-rendering if its props haven’t changed.
+
+In short:
+If the props are the same as last time → skip rendering.
+
+const Button = memo(({ onClick }) => {
+  console.log("Button rendered")
+  return <button onClick={onClick}>Click me</button>
+})
+
+
+
+17. Why useCallback() is used?
+
+useCallback is a React Hook that returns a memoized (cached) version of a callback function.
+It only changes (i.e., creates a new function instance) when the dependencies you pass to it change.
+
+const memoizedCallback = useCallback(() => {
+  // function logic here
+}, [dependencies])
+
+
+18. PostForm for ==> This component for updating or creating new post
+
+19. Interview question: How to optimize your useEffect more:
+
+ React.useEffect(()=>{
+        const subscription = watch()
+
+        return () => {  // for more optimizing the useEffect
+            subscription.unsubscribe()
+        }
+
+    },[watch, slugTransForm, setValue])
+
+
+
 	
 
 

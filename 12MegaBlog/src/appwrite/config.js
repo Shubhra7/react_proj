@@ -38,6 +38,7 @@ export class Service{
 
     }
 
+    // here slug is the appwrite document $id
     async updatePost(slug, {title, content, featuredImage, status}){
         try {
             return await this.databases.updateDocument(
