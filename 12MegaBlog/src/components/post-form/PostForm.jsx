@@ -107,6 +107,7 @@ const PostForm = ({post}) => {
                 {...register("title", { 
                     required: true})}
             />
+
             <Input
                 label="Slug :"
                 placeholder="Slug"
@@ -118,10 +119,13 @@ const PostForm = ({post}) => {
                     });
                 }}
             />
+
             <RTE label="Content :" name="content"
             control={control} defaultValue={getValues("content")} />
+
         </div>
         <div className='w-1/3 px-2'>
+
             <Input
                 label="Featured Image :"
                 type="file"
@@ -131,6 +135,7 @@ const PostForm = ({post}) => {
                     required:!post }
                 )}
             />
+
             {post && (
                 <div className='w-full mb-4'>
                     <img 
@@ -140,6 +145,7 @@ const PostForm = ({post}) => {
                     />
                 </div>
             )}
+            
             <Select
                 options={["active","inactive"]}
                 label="Status"
