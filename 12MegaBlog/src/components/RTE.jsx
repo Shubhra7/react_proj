@@ -20,6 +20,7 @@ export function RTE({name, control, label, defaultValue=""}){
         control={control}  // attaching control for RHF
         render={({field: {onChange}}) => (
             <Editor
+                apiKey="ig87phcj4ltzhsb8y5rwgi0a2yv5guqaa6l3zjwreitw3aa6"
                 initialValue={defaultValue}
                 init={{
                         initialValue: defaultValue,
