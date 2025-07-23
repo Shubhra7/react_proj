@@ -423,7 +423,7 @@ exp--> megaBlog project==> Select.jsx and Input.jsx
 
 15. ************** RTE (Real Time Editor) ***********
 	Go RTE.jsx
-	tinymce
+	tinymce [in latet version we need to give the ap key also]
 
 import { Controller } from "react-hook-form"
 
